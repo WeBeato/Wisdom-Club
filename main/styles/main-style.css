@@ -1,0 +1,399 @@
+@import url(/common/styles/style.css);
+
+/* ============
+    Slider
+============*/
+
+.swiper-wrapper {
+    height: 55rem !important;
+}
+
+.swiper-pagination {
+    bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #E0E0E0 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffd54f !important;
+}
+
+
+/* ============
+    Header
+============*/
+
+.header {
+    padding: 3rem 0;
+}
+
+/* Navigation */
+.nav-wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 5rem;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E0E0E0;
+    border: 1px solid #BDBDBD;
+    border-radius: 2rem;
+    height: 5rem;
+    width: 80rem;
+    padding: 0 5rem;
+    box-shadow: 0 .2rem .8rem #BDBDBD;
+}
+
+.nav-menu__link {
+    border-radius: 2rem;
+    padding: .6rem 3rem;
+    transition: all 250ms;
+}
+
+.nav-menu__link:hover,
+.nav-menu__link---active {
+    background-color: #BDBDBD;
+    box-shadow: 0 0 1rem #BDBDBD;
+}
+
+.nav__btn {
+    border: 1px solid #BDBDBD;
+    background-color: #E0E0E0;
+    border-radius: 3rem;
+    height: 5rem;
+    width: 5rem;
+    box-shadow: 0 .2rem 1rem #BDBDBD;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__btn-line {
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 5rem;
+    background-color: #000;
+    position: relative;
+    transition: all 100ms;
+}
+
+.nav__btn-line::before,
+.nav__btn-line::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 5rem;
+    background-color: #000;
+    transition: all 250ms;
+}
+
+.nav__btn-line::before {
+    top: -8px;
+}
+
+.nav__btn-line::after {
+    top: 8px;
+}
+
+.nav__btn-line--close {
+    background-color: transparent;
+}
+
+.nav__btn-line--close::before {
+    top: 0;
+    rotate: -45deg;
+}
+
+.nav__btn-line--close::after {
+    top: 0;
+    rotate: 45deg;
+}
+
+
+
+/* ============
+    Main
+============*/
+main {
+    margin-top: 8rem;
+    margin-bottom: 100rem;
+}
+
+/* --- Hero Section --- */
+.hero__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.hero__banner {
+    width: 45rem;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 2rem 1rem -.8rem #BDBDBD;
+    transition: all 0.5s;
+}
+
+.hero__img {
+    width: 100%;
+}
+
+.hero__content {
+    max-width: 50rem;
+    transition: all 0.5s;
+}
+
+.hero__title {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.hero__title::before {
+    content: "";
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(../images/learning.png) no-repeat center center;
+    background-size: cover;
+    right: 8px;
+    rotate: -15deg;
+}
+
+.hero__title::after {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background: url(../images/wisdom.png) no-repeat center center;
+    background-size: cover;
+    right: 14.5rem;
+}
+
+.hero__caption {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.hero__tg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__tg-text {
+    border-right: 3px solid;
+    padding-right: 1rem;
+}
+
+
+/* --- Posts Section --- */
+.posts {
+    margin-top: 20rem;
+}
+
+.posts__container {
+    background-color: #1f1f1f;
+    padding: 3rem 6rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 1rem rgb(31, 31, 31, 0.2);
+}
+
+.posts__title {
+    color: #f5f5f5;
+    margin: 0 auto 6rem auto;
+    text-align: center;
+    position: relative;
+    width: max-content;
+    padding: 0 2.5rem;
+}
+
+.posts__title::before,
+.posts__title::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #ffd54f;
+}
+
+.posts__title::before {
+    width: 50%;
+    left: 100%;
+    top: 50%;
+}
+
+.posts__title::after {
+    width: 50%;
+    top: 50%;
+    right: 100%;
+}
+
+.post {
+    text-align: center;
+    max-width: 30rem;
+    background-color: #E0E0E0;
+    border-radius: 3rem;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.post__banner {
+    margin: 0 auto;
+    border-radius: 2.5rem;
+    overflow: hidden;
+}
+
+.post__banner img {
+    width: 100%;
+}
+
+.post__title {
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+}
+
+.post__btn {
+    margin-top: 2rem;
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    border-radius: 2rem;
+    width: 100%;
+    padding: .5rem 0;
+    font-size: 1.8rem;
+    border: 2px solid #1f1f1f;
+    transition: all 0.3s;
+}
+
+.post__btn:hover {
+    border: 2px solid #ffd54f;
+    color: #ffd54f;
+}
+
+
+
+/* =======================
+    Admin Panel Bottom    
+========================*/
+#panel{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    border: 3px solid #ffd54f;
+    background-color: #1f1f1f;
+    position: sticky;
+    right: 5rem;
+    bottom: 3rem;
+    color: #fff;
+    font-size: 2.2rem;
+    z-index: 100;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+#panel span{
+    position: absolute;
+    font-size: 1.4rem;
+    top: 2.2rem;
+    right: 1rem;
+}
+
+/* ===============
+    Animations    
+================*/
+
+@keyframes shrinkHero768 {
+    from {
+        width: 35rem;
+        height: 35rem;
+    }
+
+    to {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@keyframes expandHero768 {
+    from {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    to {
+        width: 35rem;
+        height: 35rem;
+    }
+}
+
+@keyframes shrinkHero576 {
+    from {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    to {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@keyframes expandHero576 {
+    from {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    to {
+        width: 30rem;
+        height: 30rem;
+    }
+}
+
+@keyframes shrinkHero450 {
+    from {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    to {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@keyframes expandHero450 {
+    from {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    to {
+        width: 25rem;
+        height: 25rem;
+    }
+}

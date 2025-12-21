@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل ادمین</title>
+    <link rel="stylesheet" href="./styles/panel-style.css">
+</head>
+
+<body>
+    <a id="main">
+        صــــــــفحه
+        <span>اصلی</span>
+    </a>
+
+    <div class="intro" id="intro">
+        <h2 class="intro__text1" id="introText1">به به، ببین کی اینجاست🤩</h2>
+        <h2 class="intro__text2" id="introText2">بفرما پنل در اختیارت🙌</h2>
+    </div>
+
+    <div class="panel" id="panel">
+            <h2 class="panel__title">پنل مدیریت پست ها</h2>
+
+            <form class="add-post">
+                <h3 class="add-post__title">
+                    افزودن پست
+                </h3>
+
+                <!-- <label for="post-image" class="add-post__label">عکس پست را اپلود کنید</label>
+                <input type="file" id="post-image" class="add-post__input"> -->
+
+
+                <label for="post-title" class="add-post__label">نام پست</label>
+                <input type="text" id="post-title" class="add-post__input">
+
+                <label for="post-describtion" class="add-post__label">توضیح کوتاه</label>
+                <textarea id="post-describtion" class="add-post__input" maxlength="70"></textarea>
+
+                <label for="post-link" class="add-post__label">لینک پست</label>
+                <input type="text" id="post-link" class="add-post__input">
+
+
+                <button type="submit" class="add-post__btn primary-btn">افزودن پست</button>
+            </form>
+    </div>
+
+
+    <div class="overlay" id="overlay">
+        <h2 class="overlay__text">
+            کلک تو ادمین نیستی نباید اینجا باشی🤨
+        </h2>
+        <button class="overlay__btn primary-btn" type="button">رفتن به صفحه اصلی 🏛️</button>
+    </div>
+
+
+    <script src="./js/panel.js"></script>
+</body>
+
+</html>

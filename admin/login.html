@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود ادمین</title>
+    <link rel="stylesheet" href="./styles/login-style.css">
+    <link rel="icon" href="/common/images/favicon-32x32.png">
+</head>
+
+<body>
+
+    <form class="form">
+        <h2 class="form__title">
+            سلام ادمین جون👋<br>
+            لطفا وارد شو...
+        </h2>
+
+        <label for="user" class="form__label">نام کاربری</label>
+        <input type="text" id="user" class="form__input">
+
+        <label for="pass" class="form__label">رمز عبور</label>
+        <input type="password" id="pass" class="form__input">
+
+        <button type="submit" class="form__btn">ثبت</button>
+    </form>
+
+    <div class="overlay" id="overlay">
+        <h2 class="overlay__text">
+            ❌ شما ادمین نیستید، اجازه ورود به این صفحه را ندارید ❌
+        </h2>
+        <button class="overlay__btn primary-btn" type="button">رفتن به صفحه اصلی 🏛️</button>
+    </div>
+    
+    
+    <div class="admin-overlay" id="admin-overlay">
+        <h2 class="admin-overlay__text">
+            شناختمت جیگر نیاز نیست فرم پر کنی😉
+        </h2>
+        <h3 class="admin-overlay__text">از دکمه های زیر استفاده کن👇</h3>
+        <button class="admin-overlay__btn-main admin-overlay__btn primary-btn" type="button">رفتن به صفحه اصلی 🏛️</button>
+        <button class="admin-overlay__btn-panel admin-overlay__btn primary-btn" type="button">رفتن به پنل ⚙️</button>
+    </div>
+
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

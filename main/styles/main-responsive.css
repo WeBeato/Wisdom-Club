@@ -1,0 +1,281 @@
+@media (max-width:1400px) {
+    .hero__wrapper {
+        padding: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    main {
+        margin-top: 6rem;
+    }
+
+    .hero__banner {
+        width: 35rem;
+        margin-left: 8rem;
+    }
+}
+
+@media (max-width:992px) {
+    .hero__banner {
+        margin-left: 5rem;
+    }
+
+    .hero__title {
+        font-size: 3.6rem;
+        margin: 0;
+    }
+
+    .hero__title::before {
+        width: 2rem;
+        height: 2rem;
+        right: 8px;
+        rotate: -15deg;
+    }
+
+    .hero__title::after {
+        top: -3px;
+        right: 12.5rem;
+    }
+
+    .hero__caption {
+        font-size: 1.6rem;
+    }
+
+    .hero__tg-btn {
+        padding: .5rem 2.5rem;
+    }
+
+
+    .posts__title {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width:768px) {
+    * {
+        cursor: default;
+    }
+
+
+    .nav {
+        justify-content: start;
+        right: 10rem;
+    }
+
+    .nav-menu {
+        display: block;
+        position: absolute;
+        top: 4rem;
+        right: -.5rem;
+        padding: 0;
+        width: 25rem;
+        height: 0;
+        opacity: 0;
+        transition: all 250ms;
+    }
+
+    .nav-menu--open {
+        padding: 2rem 1rem;
+        height: 24rem;
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .nav-menu__item:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    .nav-menu__link {
+        display: block;
+    }
+
+    .nav__btn {
+        display: flex;
+        position: relative;
+        right: -5rem;
+    }
+
+    main {
+        margin-top: 0rem;
+    }
+
+    .hero__wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    .hero__banner {
+        margin: 0 0 2rem;
+        position: fixed;
+    }
+
+    .hero__banner--compressed {
+        background-color: #E0E0E0;
+        top: 2rem;
+        left: 5rem;
+        z-index: 100;
+        box-shadow: 0 .2rem 1rem #BDBDBD;
+        animation: shrinkHero768 0.3s forwards;
+    }
+
+    .hero__banner--compressed-exit {
+        animation: expandHero768 0.5s forwards;
+    }
+
+    .hero__content {
+        margin-top: 40rem;
+    }
+
+    .hero__content--matgin-cut {
+        margin-top: 2rem;
+    }
+
+    .hero__title {
+        font-size: 4rem;
+        margin: 0 auto;
+    }
+
+    .hero__title::before {
+        right: 1rem;
+    }
+
+    .hero__title::after {
+        top: 0;
+        right: auto;
+        left: 4rem;
+    }
+
+    .hero__caption {
+        font-size: 2rem;
+    }
+
+    .hero__tg-btn {
+        padding: 1rem 4rem;
+    }
+
+    .posts__title {
+        font-size: 2.8rem;
+    }
+
+}
+
+@media (max-width:576px) {
+    main {
+        margin-top: 0rem;
+    }
+
+    .hero__banner {
+        width: 30rem;
+    }
+
+    .hero__banner--compressed {
+        animation: shrinkHero576 0.3s forwards;
+    }
+
+    .hero__banner--compressed-exit {
+        animation: expandHero576 0.5s forwards;
+    }
+
+    .hero__content {
+        margin-top: 35rem;
+    }
+
+    .hero__content--matgin-cut {
+        margin-top: 3rem;
+    }
+
+    .posts__title {
+        font-size: 2.5rem;
+        padding: 1rem 3rem;
+    }
+
+    .posts__title::before {
+        width: 100%;
+        left: 0%;
+        top: 0%;
+    }
+
+    .posts__title::after {
+        width: 100%;
+        top: 100%;
+        right: 0%;
+    }
+
+}
+
+@media (max-width:450px) {
+    .nav-menu {
+        width: 22rem;
+    }
+
+    .nav-menu--open {
+        padding: 2rem 0rem;
+    }
+
+    .nav__btn {
+        right: -6rem;
+    }
+
+    .hero__banner {
+        width: 25rem;
+    }
+
+    .hero__banner--compressed {
+        animation: shrinkHero450 0.3s forwards;
+        left: 3rem;
+    }
+
+    .hero__banner--compressed-exit {
+        animation: expandHero450 0.5s forwards;
+    }
+
+    .hero__content {
+        margin-top: 29rem;
+    }
+
+    .hero__content--matgin-cut {
+        margin-top: 10rem;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+    }
+
+    .hero__title::before {
+        right: .8rem;
+    }
+
+    .hero__title::after {
+        top: -.5rem;
+        right: auto;
+        left: 3.5rem;
+    }
+
+    .hero__tg {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width:400px) {
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__title::before {
+        right: .7rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .hero__title::after {
+        top: -.9rem;
+        right: auto;
+        left: 3rem;
+    }
+
+    .posts__container {
+        padding: 3rem 3rem;
+    }
+}
