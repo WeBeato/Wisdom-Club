@@ -49,3 +49,8 @@ The content theme revolves around:
 - Minimal and calm visual style
 - Focus on readability and clarity
 - Reusable UI components where possible
+
+---
+
+## Live Demo
+[👉 View on GitHub Pages](https://webeato.github.io/Wisdom-Club/)
