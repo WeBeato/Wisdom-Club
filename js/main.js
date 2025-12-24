@@ -49,7 +49,7 @@ if (isAdmin) {
 
 // Click Panel Button And Redirect To Admin Panel
 document.getElementById("panel").addEventListener("click", () => {
-    window.location.href = "/admin/panel.html";
+    window.location.href = "../panel.html";
 });
 
 

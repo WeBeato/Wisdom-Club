@@ -1,6 +1,6 @@
 // Click Main Button And Redirect To Main Page
 document.getElementById("main").addEventListener("click", () => {
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
 });
 
 
@@ -18,7 +18,7 @@ function noAdmin() {
         }, 1000);
     }
     document.querySelector(".overlay__btn").addEventListener("click", () => {
-        window.location.replace("/index.html")
+        window.location.replace("../index.html")
     })
 }
 noAdmin();

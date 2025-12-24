@@ -7,7 +7,7 @@ async function getAdmin(e) {
     const formUser = document.querySelector("#user").value;
     const formPass = document.querySelector("#pass").value;
 
-    const res = await fetch("./data/admin.json");
+    const res = await fetch("../data/admin.json");
     const data = await res.json();
 
     let user = data.user;
@@ -24,7 +24,7 @@ async function getAdmin(e) {
         localStorage.removeItem("noAdmin");
         localStorage.removeItem("client");
         setTimeout(() => {
-            window.location.replace("/index.html")
+            window.location.replace("../index.html")
         }, 1000);
     } else {
         mistake--;
@@ -56,7 +56,7 @@ function noAdmin() {
         }, 1000);
     }
     document.querySelector(".overlay__btn").addEventListener("click", () => {
-        window.location.replace("/index.html")
+        window.location.replace("../index.html")
     })
 }
 noAdmin();
@@ -74,10 +74,10 @@ if (isAdmin) {
         }, 1000);
     }
     document.querySelector(".admin-overlay__btn-main").addEventListener("click", () => {
-        window.location.replace("/index.html")
+        window.location.replace("../index.html")
     })
     document.querySelector(".admin-overlay__btn-panel").addEventListener("click", () => {
-        window.location.replace("/admin/panel.html")
+        window.location.replace("../panel.html")
     })
 }
 
