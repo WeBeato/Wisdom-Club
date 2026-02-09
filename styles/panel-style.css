@@ -50,7 +50,7 @@
 
 
 .panel {
-    margin: 5rem 20rem;
+    margin: 5rem 25rem;
     padding: 5rem;
     display: none;
     opacity: 0;
@@ -84,7 +84,7 @@
     margin-top: 5rem;
     background-color: #E0E0E0;
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 2rem 5rem;
 }
 
 .add-post__title {
